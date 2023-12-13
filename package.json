@@ -5,6 +5,7 @@
 		"@nextui-org/react": "^2.2.9",
 		"@vitejs/plugin-react": "^4.2.1",
 		"framer-motion": "^10.16.16",
+		"mathjs": "^12.2.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
@@ -13,7 +14,6 @@
 		"build": "npm urn up && npm urn fmt && npm urn tw && tsc && npm urn lint && npm urn gen-card && vite build",
 		"dev": "tsx scripts/dev.ts",
 		"fmt": "prettier -w .",
-		"gen-card": "tsx scripts/generateCardImage.ts",
 		"lint": "eslint",
 		"test": "npm urn build && serve dist",
 		"tw": "tailwind -mi src/styles/input.css -o src/styles/out.css",
@@ -23,7 +23,7 @@
 	"type": "module",
 	"devDependencies": {
 		"@types/node": "^20.10.4",
-		"@types/react": "^18.2.43",
+		"@types/react": "^18.2.45",
 		"@types/react-dom": "^18.2.17",
 		"eslint": "^8.55.0",
 		"eslint-plugin-react": "^7.33.2",
@@ -34,6 +34,6 @@
 		"tailwindcss": "^3.3.6",
 		"tsx": "^4.6.2",
 		"typescript": "^5.3.3",
-		"vite": "^5.0.7"
+		"vite": "^5.0.8"
 	}
 }

@@ -7,3 +7,7 @@
 :root {
 	font-family: "Inter", sans-serif;
 }
+
+.mono {
+	font-family: "Titillium Web", monospace;
+}
