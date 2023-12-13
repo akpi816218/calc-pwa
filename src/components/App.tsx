@@ -188,7 +188,6 @@ export default function App() {
 	return (
 		<StrictMode>
 			<Providers>
-				<div className="flex flex-col justify-stretch">
 				<main className="w-full h-full dark:bg-neutral-800 text-3xl dark:text-neutral-300 flex flex-col justify-stretch content-stretch items-stretch">
 					<div
 						id="screen"
@@ -244,7 +243,6 @@ export default function App() {
 						</div>
 					</div>
 				</main>
-				</div>
 			</Providers>
 		</StrictMode>
 	);
