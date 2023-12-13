@@ -11,7 +11,7 @@
 	},
 	"private": true,
 	"scripts": {
-		"build": "npm urn up && npm urn fmt && npm urn tw && tsc && npm urn lint && npm urn gen-card && vite build",
+		"build": "npm urn up && npm urn fmt && npm urn tw && tsc && npm urn lint && vite build",
 		"dev": "tsx scripts/dev.ts",
 		"fmt": "prettier -w .",
 		"lint": "eslint",
