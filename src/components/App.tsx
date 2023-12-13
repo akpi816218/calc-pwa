@@ -173,7 +173,7 @@ export default function App() {
 				handler: () => {
 					try {
 						setResult(
-							evaluate(eq.replaceAll(/[^\(\)1234567890\%\/\*\.\!]+/g, ''))
+							evaluate(eq.replaceAll(/[^\(\)1234567890\%\/\*\-\+\.\!]+/g, ''))
 						);
 					} catch {
 						setResult('Syntax Error');
