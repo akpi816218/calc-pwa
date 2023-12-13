@@ -188,7 +188,7 @@ export default function App() {
 	return (
 		<StrictMode>
 			<Providers>
-				<main className="min-w-screen min-h-screen max-w-screen max-h-screen dark:bg-neutral-800 text-3xl dark:text-neutral-300 flex flex-col justify-stretch content-stretch items-stretch">
+				<main className="w-full h-full dark:bg-neutral-800 text-3xl dark:text-neutral-300 flex flex-col justify-stretch content-stretch items-stretch">
 					<div
 						id="screen"
 						className="p-8 flex flex-col flex-grow justify-end dark:bg-neutral-700 rounded-b-3xl"
