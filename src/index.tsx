@@ -1,4 +1,4 @@
-import App from '@/components/App';
+import App from '@/App';
 import { createRoot } from 'react-dom/client';
 
 if (!window.location.pathname.endsWith('/')) window.location.pathname += '/';

@@ -6,14 +6,17 @@
 		"@vitejs/plugin-react": "^4.2.1",
 		"framer-motion": "^10.16.16",
 		"mathjs": "^12.2.0",
+		"puppeteer": "^21.6.1",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	},
 	"private": true,
 	"scripts": {
-		"build": "npm urn up && npm urn fmt && npm urn tw && tsc && npm urn lint && vite build",
+		"build": "npm urn up && npm urn fmt && npm urn tw && tsc && npm urn lint && npm urn gen-icons && npm urn gen-screenshots && vite build",
 		"dev": "tsx scripts/dev.ts",
 		"fmt": "prettier -w .",
+		"gen-icons": "pwa-assets-generator",
+		"gen-screenshots": "tsx scripts/generateScreenshots.ts",
 		"lint": "eslint",
 		"test": "npm urn build && serve dist",
 		"tw": "tailwind -mi src/styles/input.css -o src/styles/out.css",
@@ -25,15 +28,18 @@
 		"@types/node": "^20.10.4",
 		"@types/react": "^18.2.45",
 		"@types/react-dom": "^18.2.17",
+		"@vite-pwa/assets-generator": "^0.2.1",
 		"eslint": "^8.55.0",
 		"eslint-plugin-react": "^7.33.2",
 		"eslint-plugin-react-refresh": "^0.4.5",
-		"npm-check-updates": "^16.14.11",
+		"npm-check-updates": "^16.14.12",
 		"prettier": "^3.1.1",
 		"serve": "^14.2.1",
 		"tailwindcss": "^3.3.6",
 		"tsx": "^4.6.2",
 		"typescript": "^5.3.3",
-		"vite": "^5.0.8"
+		"vite": "^5.0.8",
+		"vite-plugin-pwa": "^0.17.4",
+		"workbox-window": "^7.0.0"
 	}
 }

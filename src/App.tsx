@@ -1,13 +1,42 @@
 import '@/styles/out.css';
 import { Providers } from '@/components/Providers';
 import { StrictMode, useMemo, useState } from 'react';
-import Btn, { PressEvent } from './Button';
+import Btn, { PressEvent } from './components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBackspace } from '@fortawesome/free-solid-svg-icons/faBackspace';
 import { Divider } from '@nextui-org/react';
 import { evaluate } from 'mathjs';
 
 export default function App() {
+	/**
+	 * In-app install prompt
+	 * @deprecated because of lack of support
+	 * @link https://web.dev/customize-install/#beforeinstallprompt
+	 * @link https://developer.mozilla.org/en-US/docs/Web/API/BeforeInstallPromptEvent
+	 */
+	/**
+		// Initialize deferredPrompt for use later to show browser install prompt.
+		let deferredPrompt: BeforeInstallPromptEvent | null;
+		window.addEventListener('beforeinstallprompt', e => {
+			// Prevent the mini-infobar from appearing on mobile
+			e.preventDefault();
+			// Stash the event so it can be triggered later.
+			deferredPrompt = e;
+			// Update UI notify the user they can install the PWA
+			showInstallPromotion();
+		});
+		document.getElementById('')!.addEventListener('click', async () => {
+			if (deferredPrompt === null) return;
+			// Hide the app provided install promotion
+			hideInstallPromotion();
+			// Show the install prompt
+			deferredPrompt.prompt();
+			// Wait for the user to respond to the prompt
+			// We've used the prompt, and can't use it again, throw it away
+			deferredPrompt = null;
+		});
+	*/
+
 	const [eq, setEq] = useState(''),
 		[result, setResult] = useState('');
 
