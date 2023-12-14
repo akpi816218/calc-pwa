@@ -9,10 +9,6 @@ node_modules
 # vite
 dist
 
-# generated images
-src/public/*.png
-src/public/*.ico
-
 # misc
 .DS_Store
 *.pem
